@@ -1,0 +1,22 @@
+.hero {
+  margin-bottom: 160px;
+  &__logo {
+    display: block;
+    margin: 0 auto 50px;
+    padding-top: 120px;
+  }
+  h1 {
+    margin-bottom: 25px;
+    font-size: 43px;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+  }
+  p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 20px;
+    color: hsl(201, 11%, 66%);
+  }
+  .boxForButtons {
+  }
+}

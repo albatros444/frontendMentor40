@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 165px;
+  background-color: hsl(201, 11%, 96%);
+  svg {
+    height: 50px;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 683px;
+    padding-right: 100px;
+    a {
+      width: 33.33%;
+      margin-bottom: 20px;
+      text-align: left;
+      color: hsl(210, 10%, 33%);
+    }
+  }
+  .socialLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+  }
+}
