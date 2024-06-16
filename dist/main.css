@@ -132,6 +132,10 @@ ul {
   margin-bottom: 60px;
 }
 
+.superchargeSection {
+  max-width: 2000px;
+  margin: 0 auto;
+}
 .superchargeSection h2 + p {
   margin-bottom: 55px;
 }
@@ -165,6 +169,8 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 2000px;
+  margin: 0 auto;
   padding: 0 165px;
   margin-bottom: 155px;
 }
@@ -179,28 +185,32 @@ ul {
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
   padding: 43px 165px 23px;
   background-color: hsl(201, 11%, 96%);
 }
-.footer svg {
+.footer .footerBox {
+  max-width: 1670px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footerBox svg {
   height: 55px;
 }
-.footer .links {
+.footer .footerBox .links {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   width: 673px;
   padding-right: 100px;
 }
-.footer .links a {
+.footer .footerBox .links a {
   width: 33.33%;
   margin-bottom: 20px;
   text-align: left;
   color: hsl(210, 10%, 33%);
 }
-.footer .socialLinks {
+.footer .footerBox .socialLinks {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -208,7 +218,7 @@ ul {
 }
 
 .background {
-  background: url(/images/bg-header-desktop.png) no-repeat;
+  background: 0 0/contain url(/images/bg-header-desktop.png) no-repeat;
 }
 .background .boxForButtons {
   display: flex;
