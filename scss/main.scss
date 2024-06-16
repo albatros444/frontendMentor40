@@ -7,12 +7,12 @@
 @import "footer";
 
 .background {
-  // background: url(/images/bg-header-desktop.png) no-repeat;
-  .hero,
-  .keepTrackSection,
-  .accessClipboardSection {
-    display: none;
-  }
+  background: url(/images/bg-header-desktop.png) no-repeat;
+  // .hero,
+  // .keepTrackSection,
+  // .accessClipboardSection {
+  //   display: none;
+  // }
 
   .boxForButtons {
     display: flex;

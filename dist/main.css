@@ -207,10 +207,8 @@ ul {
   width: 120px;
 }
 
-.background .hero,
-.background .keepTrackSection,
-.background .accessClipboardSection {
-  display: none;
+.background {
+  background: url(/images/bg-header-desktop.png) no-repeat;
 }
 .background .boxForButtons {
   display: flex;
@@ -270,17 +268,20 @@ ul {
     margin-bottom: 25px;
   }
   .background h2 {
-    margin: 0 auto 20px;
+    margin: 0 auto 18px;
     font-size: 28px;
+    letter-spacing: -0.01em;
   }
   .background h2 + p {
     font-size: 16px;
+    line-height: 1.6;
   }
   .background .hero {
     padding: 0 30px;
     margin-bottom: 140px;
   }
   .background .hero__logo {
+    padding-top: 120px;
     margin-bottom: 65px;
   }
   .background .hero h1 {
@@ -303,6 +304,7 @@ ul {
   }
   .background .keepTrackSection h2 + p {
     width: 100%;
+    margin-bottom: 64px;
   }
   .background .keepTrackSection .imgAndSnippets {
     display: block;
@@ -310,7 +312,7 @@ ul {
   .background .keepTrackSection .imgAndSnippets__img {
     width: 100%;
     height: 63.46vw;
-    margin-bottom: 50px;
+    margin-bottom: 56px;
   }
   .background .keepTrackSection .imgAndSnippets__img img {
     position: static;
@@ -323,6 +325,11 @@ ul {
   }
   .background .keepTrackSection .imgAndSnippets__snippets p {
     width: 100%;
+    line-height: 1.6;
+    margin-bottom: 50px;
+  }
+  .background .accessClipboardSection h2 {
+    padding: 0 30px;
   }
   .background .accessClipboardSection h2 + p {
     width: auto;
@@ -331,48 +338,91 @@ ul {
   }
   .background .accessClipboardSection img {
     height: 58.66vw;
+    margin-bottom: 95px;
   }
   .background .superchargeSection {
     padding: 0 30px;
   }
+  .background .superchargeSection h2 {
+    margin: 0 auto 12px;
+  }
+  .background .superchargeSection h2 + p {
+    margin: 0 auto 75px;
+  }
   .background .superchargeSection .tools {
     display: block;
     padding: 0;
+    margin: 0 auto 135px;
   }
   .background .superchargeSection .tools__tool {
     width: 100%;
   }
+  .background .superchargeSection .tools__tool p {
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
   .background .corpLogos {
     display: block;
     padding: 0;
+    margin-bottom: 165px;
   }
   .background .corpLogos .imgBox {
-    margin-bottom: 50px;
+    margin-bottom: 63px;
+  }
+  .background .corpLogos .imgBox:nth-child(1) img {
+    height: 40px;
+  }
+  .background .corpLogos .imgBox:nth-child(2) img {
+    height: 42px;
+  }
+  .background .corpLogos .imgBox:nth-child(3) img {
+    height: 29px;
+  }
+  .background .corpLogos .imgBox:nth-child(4) img {
+    height: 46px;
+  }
+  .background .corpLogos .imgBox:nth-child(5) img {
+    height: 25px;
   }
   .background .clipboardSection p {
     width: 100%;
   }
   .background .footer {
     display: block;
-    padding: 0 30px 60px;
+    padding: 0 30px 50px;
   }
   .background .footer svg {
-    margin: 40px 0;
+    margin: 55px 0 40px;
   }
   .background .footer .links {
-    display: block;
+    flex-direction: column;
     width: 100%;
     padding: 0;
   }
   .background .footer .links a {
     display: block;
     width: auto;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     text-align: center;
   }
+  .background .footer .links a:nth-child(1) {
+    order: 1;
+  }
+  .background .footer .links a:nth-child(2) {
+    order: 3;
+  }
+  .background .footer .links a:nth-child(3) {
+    order: 5;
+  }
+  .background .footer .links a:nth-child(4) {
+    order: 2;
+  }
+  .background .footer .links a:nth-child(5) {
+    order: 4;
+  }
   .background .footer .socialLinks {
-    width: 160px;
-    margin: 0 auto;
+    width: 155px;
+    margin: 20px auto 0;
   }
 }
 
