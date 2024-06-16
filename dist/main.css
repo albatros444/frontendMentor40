@@ -62,31 +62,34 @@ ul {
 }
 
 .hero {
-  margin-bottom: 160px;
+  margin-top: 3px;
+  margin-bottom: 150px;
 }
 .hero__logo {
   display: block;
-  margin: 0 auto 50px;
-  padding-top: 120px;
+  margin: 0 auto 55px;
+  padding-top: 130px;
 }
 .hero h1 {
-  margin-bottom: 25px;
-  font-size: 43px;
+  margin-bottom: 15px;
+  font-size: 46px;
   font-weight: 600;
+  letter-spacing: -0.02em;
   color: hsl(210, 10%, 33%);
 }
 .hero p {
   max-width: 700px;
-  margin: 0 auto 40px;
+  margin: 0 auto 50px;
   font-size: 20px;
+  line-height: 1.5;
   color: hsl(201, 11%, 66%);
 }
 .keepTrackSection {
-  height: 1000px;
+  height: 960px;
 }
 .keepTrackSection h2 + p {
   width: 720px;
-  margin: 0 auto 70px;
+  margin: 0 auto 80px;
 }
 .keepTrackSection .imgAndSnippets {
   display: flex;
@@ -102,26 +105,27 @@ ul {
 }
 .keepTrackSection .imgAndSnippets__snippets {
   width: 50%;
-  padding: 70px 20px 0 120px;
+  padding: 70px 20px 0 110px;
   text-align: left;
 }
 .keepTrackSection .imgAndSnippets__snippets h3 {
-  margin-bottom: 20px;
-  font-size: 23px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  letter-spacing: -0.01em;
   font-weight: 600;
   color: hsl(210, 10%, 33%);
 }
 .keepTrackSection .imgAndSnippets__snippets p {
   width: 350px;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
   font-size: 16px;
-  letter-spacing: 0.02em;
-  line-height: 1.7;
+  letter-spacing: 0.01em;
+  line-height: 1.8;
   color: hsl(201, 11%, 66%);
 }
 
 .accessClipboardSection h2 + p {
-  margin: 0 auto 90px;
+  margin: 0 auto 98px;
   width: 700px;
 }
 .accessClipboardSection img {
@@ -129,13 +133,13 @@ ul {
 }
 
 .superchargeSection h2 + p {
-  margin-bottom: 70px;
+  margin-bottom: 55px;
 }
 .superchargeSection .tools {
   display: flex;
   justify-content: space-between;
   padding: 0 165px;
-  margin: 0 auto 170px;
+  margin: 0 auto 160px;
 }
 .superchargeSection .tools__tool {
   width: 350px;
@@ -146,14 +150,14 @@ ul {
   align-content: center;
 }
 .superchargeSection .tools__tool h3 {
-  margin-bottom: 20px;
-  font-size: 25px;
+  margin-bottom: 18px;
+  font-size: 23px;
   font-weight: 600;
   color: hsl(210, 10%, 33%);
 }
 .superchargeSection .tools__tool p {
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.85;
   color: hsl(201, 11%, 66%);
 }
 
@@ -162,31 +166,32 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 0 165px;
-  margin-bottom: 170px;
+  margin-bottom: 155px;
 }
 
 .clipboardSection {
+  padding: 0 30px;
   margin-bottom: 150px;
 }
 .clipboardSection p {
   width: 710px;
-  margin: 0 auto 50px;
+  margin: 0 auto 45px;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 50px 165px;
+  padding: 43px 165px 23px;
   background-color: hsl(201, 11%, 96%);
 }
 .footer svg {
-  height: 50px;
+  height: 55px;
 }
 .footer .links {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  width: 683px;
+  width: 673px;
   padding-right: 100px;
 }
 .footer .links a {
@@ -202,8 +207,10 @@ ul {
   width: 120px;
 }
 
-.background {
-  background: url(/images/bg-header-desktop.png) no-repeat;
+.background .hero,
+.background .keepTrackSection,
+.background .accessClipboardSection {
+  display: none;
 }
 .background .boxForButtons {
   display: flex;
@@ -215,14 +222,14 @@ ul {
   display: inline-block;
   width: 227px;
   height: 56px;
-  padding: 0;
+  padding-top: 3px;
   border: none;
   border-radius: 56px;
   outline: inherit;
   cursor: pointer;
   font-size: 18px;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.03em;
   text-align: center;
   text-decoration: none;
@@ -245,9 +252,128 @@ ul {
   color: hsl(210, 10%, 33%);
 }
 .background h2 + p {
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   line-height: 1.7;
   color: hsl(201, 11%, 66%);
+}
+
+@media screen and (max-width: 700px) {
+  .background {
+    background: url(/images/bg-header-mobile.png) no-repeat;
+  }
+  .background .boxForButtons {
+    display: block;
+    width: 100%;
+  }
+  .background .boxForButtons button {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .background h2 {
+    margin: 0 auto 20px;
+    font-size: 28px;
+  }
+  .background h2 + p {
+    font-size: 16px;
+  }
+  .background .hero {
+    padding: 0 30px;
+    margin-bottom: 140px;
+  }
+  .background .hero__logo {
+    margin-bottom: 65px;
+  }
+  .background .hero h1 {
+    margin-bottom: 15px;
+    font-size: 32px;
+    letter-spacing: -0.01em;
+  }
+  .background .hero p {
+    width: 310px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .background .keepTrackSection {
+    height: auto;
+    margin-bottom: 200px;
+    padding: 0 30px;
+  }
+  .background .keepTrackSection h2 {
+    width: 250px;
+  }
+  .background .keepTrackSection h2 + p {
+    width: 100%;
+  }
+  .background .keepTrackSection .imgAndSnippets {
+    display: block;
+  }
+  .background .keepTrackSection .imgAndSnippets__img {
+    width: 100%;
+    height: 63.46vw;
+    margin-bottom: 50px;
+  }
+  .background .keepTrackSection .imgAndSnippets__img img {
+    position: static;
+    height: 100%;
+  }
+  .background .keepTrackSection .imgAndSnippets__snippets {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .background .keepTrackSection .imgAndSnippets__snippets p {
+    width: 100%;
+  }
+  .background .accessClipboardSection h2 + p {
+    width: auto;
+    margin: 0 auto 60px;
+    padding: 0 30px;
+  }
+  .background .accessClipboardSection img {
+    height: 58.66vw;
+  }
+  .background .superchargeSection {
+    padding: 0 30px;
+  }
+  .background .superchargeSection .tools {
+    display: block;
+    padding: 0;
+  }
+  .background .superchargeSection .tools__tool {
+    width: 100%;
+  }
+  .background .corpLogos {
+    display: block;
+    padding: 0;
+  }
+  .background .corpLogos .imgBox {
+    margin-bottom: 50px;
+  }
+  .background .clipboardSection p {
+    width: 100%;
+  }
+  .background .footer {
+    display: block;
+    padding: 0 30px 60px;
+  }
+  .background .footer svg {
+    margin: 40px 0;
+  }
+  .background .footer .links {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .background .footer .links a {
+    display: block;
+    width: auto;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .background .footer .socialLinks {
+    width: 160px;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
