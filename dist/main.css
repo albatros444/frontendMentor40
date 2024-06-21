@@ -194,7 +194,7 @@ ul {
   display: flex;
   justify-content: space-between;
 }
-.footer .footerBox svg {
+.footer .footerBox .footerLogo {
   height: 55px;
 }
 .footer .footerBox .links {
@@ -430,7 +430,7 @@ ul {
   .background .footer .footerBox {
     display: block;
   }
-  .background .footer .footerBox svg {
+  .background .footer .footerBox .footerLogo {
     margin: 55px 0 40px;
   }
   .background .footer .footerBox .links {
