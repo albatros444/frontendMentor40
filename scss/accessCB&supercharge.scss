@@ -20,10 +20,11 @@
   .tools {
     display: flex;
     justify-content: space-between;
-    padding: 0 165px;
+    padding: 0 11.46vw; //165px;
     margin: 0 auto 160px;
     &__tool {
-      width: 350px;
+      width: 24.3vw; //350px;
+      max-width: 350px;
       .imgBox {
         height: 75px;
         margin-bottom: 20px;

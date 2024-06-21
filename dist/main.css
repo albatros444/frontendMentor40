@@ -105,7 +105,7 @@ ul {
 }
 .keepTrackSection .imgAndSnippets__snippets {
   width: 50%;
-  padding: 70px 20px 0 110px;
+  padding: 70px 20px 0 7.64vw;
   text-align: left;
 }
 .keepTrackSection .imgAndSnippets__snippets h3 {
@@ -142,11 +142,12 @@ ul {
 .superchargeSection .tools {
   display: flex;
   justify-content: space-between;
-  padding: 0 165px;
+  padding: 0 11.46vw;
   margin: 0 auto 160px;
 }
 .superchargeSection .tools__tool {
-  width: 350px;
+  width: 24.3vw;
+  max-width: 350px;
 }
 .superchargeSection .tools__tool .imgBox {
   height: 75px;
@@ -170,9 +171,8 @@ ul {
   justify-content: space-between;
   align-items: center;
   max-width: 2000px;
-  margin: 0 auto;
-  padding: 0 165px;
-  margin-bottom: 155px;
+  margin: 0 auto 155px;
+  padding: 0 11.46vw;
 }
 
 .clipboardSection {
@@ -185,11 +185,11 @@ ul {
 }
 
 .footer {
-  padding: 43px 165px 23px;
+  padding: 43px 11.46vw 23px;
   background-color: hsl(201, 11%, 96%);
 }
 .footer .footerBox {
-  max-width: 1670px;
+  max-width: 1535px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -201,8 +201,9 @@ ul {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  width: 673px;
-  padding-right: 100px;
+  width: 46.74vw;
+  max-width: 950px;
+  padding-right: 6.94vw;
 }
 .footer .footerBox .links a {
   width: 33.33%;
@@ -265,16 +266,18 @@ ul {
   color: hsl(201, 11%, 66%);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 950px) {
   .background {
-    background: url(/images/bg-header-mobile.png) no-repeat;
+    background: 0 0/contain url(/images/bg-header-mobile.png) no-repeat;
   }
   .background .boxForButtons {
     display: block;
     width: 100%;
+    max-width: 660px;
   }
   .background .boxForButtons button {
     width: 100%;
+    max-width: 365px;
     margin-bottom: 25px;
   }
   .background h2 {
@@ -300,7 +303,8 @@ ul {
     letter-spacing: -0.01em;
   }
   .background .hero p {
-    width: 310px;
+    max-width: 550px;
+    padding: 0 3px;
     font-size: 16px;
     line-height: 1.6;
   }
@@ -309,11 +313,9 @@ ul {
     margin-bottom: 200px;
     padding: 0 30px;
   }
-  .background .keepTrackSection h2 {
-    width: 250px;
-  }
   .background .keepTrackSection h2 + p {
     width: 100%;
+    max-width: 550px;
     margin-bottom: 64px;
   }
   .background .keepTrackSection .imgAndSnippets {
@@ -335,14 +337,16 @@ ul {
   }
   .background .keepTrackSection .imgAndSnippets__snippets p {
     width: 100%;
+    max-width: 550px;
+    margin: 0 auto 50px;
     line-height: 1.6;
-    margin-bottom: 50px;
   }
   .background .accessClipboardSection h2 {
     padding: 0 30px;
   }
   .background .accessClipboardSection h2 + p {
     width: auto;
+    max-width: 550px;
     margin: 0 auto 60px;
     padding: 0 30px;
   }
@@ -366,10 +370,12 @@ ul {
   }
   .background .superchargeSection .tools__tool {
     width: 100%;
+    max-width: 100%;
   }
   .background .superchargeSection .tools__tool p {
+    max-width: 550px;
+    margin: 0 auto 40px;
     line-height: 1.6;
-    margin-bottom: 40px;
   }
   .background .corpLogos {
     display: block;
@@ -396,43 +402,67 @@ ul {
   }
   .background .clipboardSection p {
     width: 100%;
+    max-width: 550px;
   }
   .background .footer {
-    display: block;
     padding: 0 30px 50px;
   }
-  .background .footer svg {
+  .background .footer .footerBox {
+    display: block;
+  }
+  .background .footer .footerBox svg {
     margin: 55px 0 40px;
   }
-  .background .footer .links {
+  .background .footer .footerBox .links {
     flex-direction: column;
     width: 100%;
     padding: 0;
   }
-  .background .footer .links a {
+  .background .footer .footerBox .links a {
     display: block;
     width: auto;
     margin-bottom: 28px;
     text-align: center;
   }
-  .background .footer .links a:nth-child(1) {
+  .background .footer .footerBox .links a:nth-child(1) {
     order: 1;
   }
-  .background .footer .links a:nth-child(2) {
+  .background .footer .footerBox .links a:nth-child(2) {
     order: 3;
   }
-  .background .footer .links a:nth-child(3) {
+  .background .footer .footerBox .links a:nth-child(3) {
     order: 5;
   }
-  .background .footer .links a:nth-child(4) {
+  .background .footer .footerBox .links a:nth-child(4) {
     order: 2;
   }
-  .background .footer .links a:nth-child(5) {
+  .background .footer .footerBox .links a:nth-child(5) {
     order: 4;
   }
-  .background .footer .socialLinks {
+  .background .footer .footerBox .socialLinks {
     width: 155px;
     margin: 20px auto 0;
+  }
+}
+@media screen and (max-width: 1150px) and (min-width: 951px) {
+  .superchargeSection .tools {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto 220px;
+  }
+  .superchargeSection .tools__tool {
+    width: 350px;
+  }
+  .corpLogos {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .corpLogos .imgBox {
+    width: 225px;
+    margin-bottom: 55px;
+  }
+  .footer .footerBox .links {
+    padding-right: 0;
   }
 }
 

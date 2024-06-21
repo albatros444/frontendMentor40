@@ -1,12 +1,14 @@
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 950px) {
   .background {
-    background: url(/images/bg-header-mobile.png) no-repeat;
+    background: 0 0 / contain url(/images/bg-header-mobile.png) no-repeat;
     //elements for all sections///
     .boxForButtons {
       display: block;
       width: 100%;
+      max-width: 660px;
       button {
         width: 100%;
+        max-width: 365px;
         margin-bottom: 25px;
       }
     }
@@ -33,7 +35,8 @@
         letter-spacing: -0.01em;
       }
       p {
-        width: 310px;
+        max-width: 550px;
+        padding: 0 3px;
         font-size: 16px;
         line-height: 1.6;
       }
@@ -44,9 +47,9 @@
       margin-bottom: 200px;
       padding: 0 30px;
       h2 {
-        width: 250px;
         & + p {
           width: 100%;
+          max-width: 550px;
           margin-bottom: 64px;
         }
       }
@@ -67,8 +70,10 @@
           text-align: center;
           p {
             width: 100%;
+            max-width: 550px;
+            margin: 0 auto 50px;
             line-height: 1.6;
-            margin-bottom: 50px;
+            // margin-bottom: 50px;
           }
         }
       }
@@ -79,6 +84,8 @@
         padding: 0 30px;
         & + p {
           width: auto;
+          max-width: 550px;
+
           margin: 0 auto 60px;
           padding: 0 30px;
         }
@@ -102,11 +109,13 @@
         margin: 0 auto 135px;
         &__tool {
           width: 100%;
+          max-width: 100%;
           h3 {
           }
           p {
+            max-width: 550px;
+            margin: 0 auto 40px;
             line-height: 1.6;
-            margin-bottom: 40px;
           }
         }
       }
@@ -148,45 +157,76 @@
     .clipboardSection {
       p {
         width: 100%;
+        max-width: 550px;
       }
     }
     /////////
     .footer {
-      display: block;
       padding: 0 30px 50px;
-      svg {
-        margin: 55px 0 40px;
-      }
-      .links {
-        // display: block;
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-        a {
-          display: block;
-          width: auto;
-          margin-bottom: 28px;
-          text-align: center;
-          &:nth-child(1) {
-            order: 1;
-          }
-          &:nth-child(2) {
-            order: 3;
-          }
-          &:nth-child(3) {
-            order: 5;
-          }
-          &:nth-child(4) {
-            order: 2;
-          }
-          &:nth-child(5) {
-            order: 4;
+      .footerBox {
+        display: block;
+        svg {
+          margin: 55px 0 40px;
+        }
+        .links {
+          // display: block;
+          flex-direction: column;
+          width: 100%;
+          padding: 0;
+          a {
+            display: block;
+            width: auto;
+            margin-bottom: 28px;
+            text-align: center;
+            &:nth-child(1) {
+              order: 1;
+            }
+            &:nth-child(2) {
+              order: 3;
+            }
+            &:nth-child(3) {
+              order: 5;
+            }
+            &:nth-child(4) {
+              order: 2;
+            }
+            &:nth-child(5) {
+              order: 4;
+            }
           }
         }
+        .socialLinks {
+          width: 155px;
+          margin: 20px auto 0;
+        }
       }
-      .socialLinks {
-        width: 155px;
-        margin: 20px auto 0;
+    }
+  }
+}
+@media screen and (max-width: 1150px) and (min-width: 951px) {
+  .superchargeSection {
+    .tools {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 0 auto 220px;
+      &__tool {
+        width: 350px;
+      }
+    }
+  }
+  .corpLogos {
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .imgBox {
+      width: 225px;
+      margin-bottom: 55px;
+    }
+  }
+  .footer {
+    .footerBox {
+      .links {
+        padding-right: 0;
       }
     }
   }
