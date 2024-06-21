@@ -22,6 +22,10 @@
         margin-bottom: 20px;
         text-align: left;
         color: hsl(210, 10%, 33%);
+        transition: all 0.13s ease-in-out;
+        &:hover {
+          color: hsl(171, 66%, 44%);
+        }
       }
     }
     .socialLinks {
@@ -29,6 +33,16 @@
       justify-content: space-between;
       align-items: center;
       width: 120px;
+      a {
+        svg {
+          fill: #4c545c;
+          transition: all 0.13s ease-in-out;
+
+          &:hover {
+            fill: hsl(171, 66%, 44%);
+          }
+        }
+      }
     }
   }
 }

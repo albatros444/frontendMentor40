@@ -210,12 +210,23 @@ ul {
   margin-bottom: 20px;
   text-align: left;
   color: hsl(210, 10%, 33%);
+  transition: all 0.13s ease-in-out;
+}
+.footer .footerBox .links a:hover {
+  color: hsl(171, 66%, 44%);
 }
 .footer .footerBox .socialLinks {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 120px;
+}
+.footer .footerBox .socialLinks a svg {
+  fill: #4c545c;
+  transition: all 0.13s ease-in-out;
+}
+.footer .footerBox .socialLinks a svg:hover {
+  fill: hsl(171, 66%, 44%);
 }
 
 .background {
@@ -243,16 +254,25 @@ ul {
   text-align: center;
   text-decoration: none;
   color: white;
+  transition: all 0.13s ease-in-out;
 }
 .background .boxForButtons .ios {
   background-color: hsl(171, 66%, 44%);
   border-bottom: 3px solid hsl(171, 66%, 38%);
   box-shadow: 0 10px 20px hsla(171, 66%, 38%, 0.3);
 }
+.background .boxForButtons .ios:hover {
+  background-color: hsl(171, 56%, 56%);
+  border-bottom: 3px solid hsl(171, 36%, 54%);
+}
 .background .boxForButtons .mac {
   background-color: hsl(233, 100%, 69%);
   border-bottom: 3px solid hsl(233, 70%, 62%);
   box-shadow: 0 10px 20px hsla(233, 70%, 62%, 0.3);
+}
+.background .boxForButtons .mac:hover {
+  background-color: hsl(233, 100%, 77%);
+  border-bottom: 3px solid hsl(233, 70%, 69%);
 }
 .background h2 {
   margin-bottom: 20px;
